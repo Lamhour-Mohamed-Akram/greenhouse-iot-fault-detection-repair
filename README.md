@@ -2,7 +2,7 @@
 
 Code and data for the manuscript "From Faulty Greenhouse Sensors to Trustworthy Forecasts: An End-to-End Sensor Health Management Pipeline for Fault Detection, Data Repair, and Downstream Prediction".
 
-**Status:** Submitted to the International Journal of Prognostics and Health Management (IJPHM) on 30 August 2026. Not yet accepted or published. to the International Journal of Prognostics and Health Management (IJPHM). Not yet submitted, accepted, or published; no volume, issue, article number, or DOI exists.
+**Status:** Submitted to the International Journal of Prognostics and Health Management (IJPHM) on 30 August 2026. Not yet accepted or published; no volume, issue, article number, or DOI exists.
 
 Low-cost greenhouse IoT deployments produce sensor streams that machine learning models usually assume to be trustworthy. This repository contains the experiments behind the study of an uncurated 34-day deployment (947,682 raw records, six sensor streams, median interval ~1 s) in which every stream carries at least one naturally occurring fault signature: transmission dropouts covering 26.3% of the span (longest 130.8 h), an eight-day episode of physically impossible negative soil-moisture readings, a zero-variance soil-temperature channel, a suspected CO₂ calibration bias, stuck-at episodes of up to 153.1 h, and transient spikes. The pipeline characterizes those faults on a time basis, benchmarks three unsupervised detectors on 162 controlled fault-injection scenarios built from screened-clean segments of the same deployment, benchmarks seven gap-repair methods in single-sensor and whole-node outage regimes, and quantifies the downstream consequences on the deployment's own soil-moisture forecasting task under a leakage-controlled chronological protocol.
 
@@ -90,7 +90,7 @@ Repository output filenames are historical; the IJPHM manuscript numbers figures
 
 Until the manuscript is published, please cite this repository and the manuscript as:
 
-M. A. Lamhour, M. Msalek, M. Kasbouya, S. Ardchir, and M. Azzouazi, "From Faulty Greenhouse Sensors to Trustworthy Forecasts: An End-to-End Sensor Health Management Pipeline for Fault Detection, Data Repair, and Downstream Prediction," manuscript Submitted to the International Journal of Prognostics and Health Management (IJPHM) on 30 August 2026. Not yet accepted or published. to the International Journal of Prognostics and Health Management (IJPHM), 2026. Code and data: https://github.com/Lamhour-Mohamed-Akram/greenhouse-iot-fault-detection-repair
+M. A. Lamhour, M. Msalek, M. Kasbouya, S. Ardchir, and M. Azzouazi, "From Faulty Greenhouse Sensors to Trustworthy Forecasts: An End-to-End Sensor Health Management Pipeline for Fault Detection, Data Repair, and Downstream Prediction," manuscript submitted to the International Journal of Prognostics and Health Management (IJPHM), 2026. Code and data: https://github.com/Lamhour-Mohamed-Akram/greenhouse-iot-fault-detection-repair
 
 ```
 @misc{lamhour2026sensorhealth,
@@ -103,7 +103,7 @@ M. A. Lamhour, M. Msalek, M. Kasbouya, S. Ardchir, and M. Azzouazi, "From Faulty
           Azzouazi, Mohamed},
   year={2026},
   howpublished={\url{https://github.com/Lamhour-Mohamed-Akram/greenhouse-iot-fault-detection-repair}},
-  note={Manuscript Submitted to the International Journal of Prognostics and Health Management (IJPHM) on 30 August 2026. Not yet accepted or published. to the International Journal of Prognostics and Health Management (IJPHM)}
+  note={Manuscript submitted to the International Journal of Prognostics and Health Management (IJPHM), 30 August 2026}
 }
 ```
 
