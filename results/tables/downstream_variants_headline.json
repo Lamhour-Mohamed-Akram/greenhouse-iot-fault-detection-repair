@@ -1,0 +1,90 @@
+{
+  "n_seeds": 10,
+  "rmse": {
+    "ae_repair": 6.275,
+    "drop_faulty": 11.06,
+    "raw": 9.825,
+    "rules_repair": 7.112,
+    "union_repair": 7.382
+  },
+  "rmse_sd": {
+    "ae_repair": 0.645,
+    "drop_faulty": 2.116,
+    "raw": 3.216,
+    "rules_repair": 1.065,
+    "union_repair": 1.064
+  },
+  "mae": {
+    "ae_repair": 3.875,
+    "drop_faulty": 7.87,
+    "raw": 8.078,
+    "rules_repair": 4.767,
+    "union_repair": 5.102
+  },
+  "mae_sd": {
+    "ae_repair": 0.453,
+    "drop_faulty": 2.273,
+    "raw": 2.694,
+    "rules_repair": 0.909,
+    "union_repair": 0.953
+  },
+  "r2": {
+    "ae_repair": 0.392,
+    "drop_faulty": -0.934,
+    "raw": -0.62,
+    "rules_repair": 0.21,
+    "union_repair": 0.15
+  },
+  "r2_sd": {
+    "ae_repair": 0.124,
+    "drop_faulty": 0.72,
+    "raw": 0.968,
+    "rules_repair": 0.221,
+    "union_repair": 0.231
+  },
+  "improvement_vs_raw_pct": {
+    "ae_repair": 36.1,
+    "drop_faulty": -12.6,
+    "rules_repair": 27.6,
+    "union_repair": 24.9
+  },
+  "n_train": {
+    "ae_repair": 6902,
+    "drop_faulty": 88,
+    "raw": 6902,
+    "rules_repair": 6902,
+    "union_repair": 6902
+  },
+  "n_test": 1012,
+  "train_partition_flagged_pct": {
+    "rules": {
+      "humidity": 22.0,
+      "temperature": 58.2,
+      "soil_moisture": 89.6
+    },
+    "lstm_ae": {
+      "humidity": 19.1,
+      "temperature": 21.0,
+      "soil_moisture": 45.5
+    },
+    "union": {
+      "humidity": 22.6,
+      "temperature": 59.8,
+      "soil_moisture": 89.7
+    }
+  },
+  "descriptive_full_ae_coverage_pct": {
+    "humidity": 27.7,
+    "temperature": 28.9,
+    "soil_moisture": 51.9
+  },
+  "row_any_fault_pct_rules": 84.3,
+  "environment": {
+    "python": "3.11.5",
+    "numpy": "2.3.4",
+    "tensorflow": "2.20.0",
+    "device": "CPU",
+    "op_determinism": true,
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  }
+}

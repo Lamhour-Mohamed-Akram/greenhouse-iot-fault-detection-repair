@@ -1,0 +1,21 @@
+{
+  "n_samples_raw": 947682,
+  "span_days": 34,
+  "dropout_events_gt5min": 15,
+  "dropout_total_hours": 216.8,
+  "dropout_pct_of_span": 26.3,
+  "longest_gap_hours": 130.8,
+  "soil_moisture_oor_raw_sample_pct": 1.16,
+  "soil_moisture_oor_time_basis_pct": 22.3,
+  "co2_oor_raw_sample_pct": 0.01,
+  "dead_sensors": [
+    "soil_temp"
+  ],
+  "suspected_calibration_bias_sensors": [
+    "co2"
+  ],
+  "note": "raw_sample_pct uses the raw-record denominator; time_basis_pct uses the 1-min grid. calibration_bias denotes the operational screening classification (suspected), not an independently verified hardware diagnosis.",
+  "co2_median_ppm": 101.6,
+  "stuck_longest_hours": 153.1,
+  "stuck_longest_sensor": "soil_moisture"
+}

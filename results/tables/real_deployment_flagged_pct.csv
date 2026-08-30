@@ -1,0 +1,4 @@
+detector,flagged_pct
+rules,75.34
+iforest,71.57
+lstm_ae,49.73

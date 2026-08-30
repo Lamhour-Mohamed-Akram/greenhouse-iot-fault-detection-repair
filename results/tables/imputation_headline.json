@@ -1,0 +1,52 @@
+{
+  "single_5min": {
+    "best_method": "linear",
+    "rmse": 0.4379,
+    "ffill_rmse": 0.5445
+  },
+  "single_15min": {
+    "best_method": "linear",
+    "rmse": 0.6339,
+    "ffill_rmse": 0.7275
+  },
+  "single_60min": {
+    "best_method": "linear",
+    "rmse": 0.4967,
+    "ffill_rmse": 0.8744
+  },
+  "single_240min": {
+    "best_method": "linear",
+    "rmse": 0.687,
+    "ffill_rmse": 1.2629
+  },
+  "single_720min": {
+    "best_method": "knn",
+    "rmse": 1.3296,
+    "ffill_rmse": 2.5306
+  },
+  "outage_5min": {
+    "best_method": "linear",
+    "rmse": 0.4928,
+    "ffill_rmse": 0.6083
+  },
+  "outage_15min": {
+    "best_method": "linear",
+    "rmse": 0.4994,
+    "ffill_rmse": 0.5619
+  },
+  "outage_60min": {
+    "best_method": "linear",
+    "rmse": 0.4908,
+    "ffill_rmse": 0.711
+  },
+  "outage_240min": {
+    "best_method": "linear",
+    "rmse": 2.1488,
+    "ffill_rmse": 3.6611
+  },
+  "outage_720min": {
+    "best_method": "linear",
+    "rmse": 1.9257,
+    "ffill_rmse": 2.9154
+  }
+}

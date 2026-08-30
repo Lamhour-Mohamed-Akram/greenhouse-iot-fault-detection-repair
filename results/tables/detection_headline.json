@@ -1,0 +1,19 @@
+{
+  "n_test_scenarios": 72,
+  "macro_f1": {
+    "rules": 0.444,
+    "iforest": 0.333,
+    "lstm_ae": 0.356
+  },
+  "event_recall": {
+    "rules": 0.667,
+    "iforest": 0.597,
+    "lstm_ae": 0.611
+  },
+  "best_detector_overall": "rules",
+  "real_soil_moisture_flagged_pct": {
+    "rules": 75.34,
+    "iforest": 71.57,
+    "lstm_ae": 49.73
+  }
+}

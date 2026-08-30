@@ -1,0 +1,7 @@
+sensor,valid_min,valid_max,observed_min,observed_max,oor_samples,oor_pct
+humidity,0,100,0.0,90.5,0,0.0
+temperature,-5,55,0.0,40.4,0,0.0
+soil_moisture,0,100,-85.0,122.0,11021,1.1629428436965141
+soil_temp,-5,55,10.0,10.0,0,0.0
+co2,0,5000,44.0,23553.3,75,0.007914047117070916
+light,0,1,0.0,1.0,0,0.0
