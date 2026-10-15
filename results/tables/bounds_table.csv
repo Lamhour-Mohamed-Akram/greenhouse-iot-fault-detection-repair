@@ -1,0 +1,7 @@
+sensor,unit,x_min,x_max,mu_lo,mu_hi,source_bounds,source_median_band,observed_min,observed_max,observed_median
+humidity,% RH,0,100,20,100,DHT22 datasheet range 0--100 % RH,greenhouse air is never drier than 20 % RH over a month (agronomic plausibility),0.0,90.5,57.7
+temperature,degC,-5,55,5,45,DHT22 datasheet -40--80 degC narrowed to the climatic envelope of Casablanca in spring,monthly median air temperature of an unheated greenhouse,0.0,40.4,21.9
+soil_moisture,"index units (relative index, nominal range 0--100)",0,100,0,100,"nominal range of the firmware mapping of the ADC count between two fixed reference counts (not a calibrated volumetric scale); a value outside it means the probe output left the interval between the two reference counts, and is flagged",none (relative index),-85.0,122.0,43.0
+soil_temp,degC,-5,55,5,45,DS18B20 range narrowed to the climatic envelope,monthly median soil temperature,10.0,10.0,10.0
+co2,ppm,0,5000,350,2000,sensor cannot report negative ppm; 5000 ppm is the upper bound of enrichment practice,long-run median between outdoor ambient and enrichment set points,44.0,23553.3,101.62
+light,binary,0,1,0,1,binary digital output,n/a,0.0,1.0,1.0

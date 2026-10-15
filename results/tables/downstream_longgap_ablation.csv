@@ -1,0 +1,9 @@
+,,rmse,rmse,mae,mae,r2,r2,skill,skill,inside_rmse,inside_rmse,outside_rmse,outside_rmse,n_train,n_train
+,,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+variant,config,,,,,,,,,,,,,,
+ae_repair,(i) exclude windows intersecting >12 h outages,12.2829,0.7799,8.0491,0.5253,-0.6199,0.2003,-8.5184,0.6044,2.3949,0.3895,16.2568,1.0434,5737.0,0.0
+ae_repair,(ii) diurnal fallback (default),11.0058,0.9957,6.4971,0.665,-0.3054,0.2317,-7.5288,0.7716,1.1693,0.1787,14.6559,1.3242,6902.0,0.0
+ae_repair,"(iii) no long-gap fill, drop affected windows",10.8876,0.5798,6.7746,0.3918,-0.2714,0.1359,-7.4371,0.4493,1.544,0.1863,14.4698,0.7716,3579.0,0.0
+rules_repair,(i) exclude windows intersecting >12 h outages,12.5293,1.3248,8.6231,1.2285,-0.6963,0.3474,-8.7094,1.0267,2.9706,0.814,16.5112,1.7009,5737.0,0.0
+rules_repair,(ii) diurnal fallback (default),9.9041,0.8812,5.8481,0.5668,-0.0569,0.1759,-6.675,0.6829,1.0512,0.1245,13.189,1.1741,6902.0,0.0
+rules_repair,"(iii) no long-gap fill, drop affected windows",10.7003,1.0421,6.6784,0.7782,-0.2354,0.234,-7.292,0.8076,1.5493,0.3829,14.2169,1.3734,3471.0,0.0

@@ -1,0 +1,16 @@
+kind,duration_min,detector,precision,recall,f1,event_detected
+quasi_stuck,240,iforest,0.052,0.002,0.003,0.083
+quasi_stuck,240,lstm_ae,0.0,0.0,0.0,0.0
+quasi_stuck,240,rules,0.083,0.0,0.001,0.083
+quasi_stuck,480,iforest,0.156,0.016,0.029,0.167
+quasi_stuck,480,lstm_ae,0.062,0.005,0.009,0.083
+quasi_stuck,480,rules,0.042,0.0,0.001,0.083
+stuck,30,iforest,0.453,0.164,0.227,0.5
+stuck,30,lstm_ae,0.0,0.0,0.0,0.0
+stuck,30,rules,0.0,0.0,0.0,0.0
+stuck,60,iforest,0.476,0.306,0.371,0.5
+stuck,60,lstm_ae,0.0,0.0,0.0,0.0
+stuck,60,rules,0.245,0.25,0.247,0.25
+stuck,90,iforest,0.471,0.387,0.423,0.5
+stuck,90,lstm_ae,0.0,0.0,0.0,0.0
+stuck,90,rules,0.98,1.0,0.99,1.0

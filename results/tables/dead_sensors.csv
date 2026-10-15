@@ -1,0 +1,7 @@
+sensor,n_unique,std,median,dead,calibration_bias
+humidity,577,6.782544862383429,57.7,False,False
+temperature,215,3.2577020813099815,21.9,False,False
+soil_moisture,170,13.178130185602141,43.0,False,False
+soil_temp,1,0.0,10.0,True,False
+co2,237,122.5675131478931,101.62,False,True
+light,2,0.05521448843879778,1.0,False,False

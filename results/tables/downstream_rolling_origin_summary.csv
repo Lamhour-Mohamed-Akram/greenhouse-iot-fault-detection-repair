@@ -1,0 +1,37 @@
+test_set,block,variant,n_test,rmse,rmse_sd,mae,skill,inside_pct,inside_rmse
+operational,B1: 5--8 May,ae_repair,864,2.28,0.764,1.362,-9.339,82.9,2.442
+operational,B1: 5--8 May,drop_faulty,864,1.172,0.326,0.909,-4.314,82.9,1.114
+operational,B1: 5--8 May,persistence,864,0.22,,0.051,,82.9,0.206
+operational,B1: 5--8 May,raw,864,3.139,2.557,2.08,-13.238,82.9,3.27
+operational,B1: 5--8 May,rules_repair,864,1.246,0.212,0.954,-4.653,82.9,1.27
+operational,B1: 5--8 May,union_repair,864,2.255,0.715,1.411,-9.226,82.9,2.404
+operational,B2: 8--11 May,ae_repair,844,2.5,0.439,1.913,-1.732,49.3,0.995
+operational,B2: 8--11 May,drop_faulty,844,3.156,0.366,2.419,-2.449,49.3,1.182
+operational,B2: 8--11 May,persistence,844,0.915,,0.086,,49.3,0.755
+operational,B2: 8--11 May,raw,844,3.784,1.019,3.135,-3.136,49.3,2.577
+operational,B2: 8--11 May,rules_repair,844,2.563,0.542,1.96,-1.802,49.3,0.935
+operational,B2: 8--11 May,union_repair,844,2.629,0.58,2.017,-1.874,49.3,0.962
+operational,B3: 12--22 May (chronological split),ae_repair,1565,15.03,1.267,10.152,-3.687,35.1,1.565
+operational,B3: 12--22 May (chronological split),drop_faulty,1565,17.852,1.264,12.956,-4.566,35.1,2.779
+operational,B3: 12--22 May (chronological split),persistence,1565,3.207,,1.061,,35.1,3.704
+operational,B3: 12--22 May (chronological split),raw,1565,13.373,3.766,11.152,-3.17,35.1,6.374
+operational,B3: 12--22 May (chronological split),rules_repair,1565,13.547,1.124,9.146,-3.224,35.1,1.597
+operational,B3: 12--22 May (chronological split),union_repair,1565,15.243,1.439,10.399,-3.753,35.1,1.664
+screened,B1: 5--8 May,ae_repair,343,0.835,0.231,0.645,-2.698,86.0,0.759
+screened,B1: 5--8 May,drop_faulty,343,0.784,0.354,0.672,-2.47,86.0,0.632
+screened,B1: 5--8 May,persistence,343,0.226,,0.052,,86.0,0.214
+screened,B1: 5--8 May,raw,343,1.61,0.63,1.225,-6.128,86.0,1.479
+screened,B1: 5--8 May,rules_repair,343,0.779,0.228,0.634,-2.45,86.0,0.696
+screened,B1: 5--8 May,union_repair,343,0.902,0.231,0.703,-2.992,86.0,0.819
+screened,B2: 8--11 May,ae_repair,443,2.622,0.42,2.025,-1.107,42.9,1.16
+screened,B2: 8--11 May,drop_faulty,443,3.334,0.382,2.584,-1.68,42.9,1.199
+screened,B2: 8--11 May,persistence,443,1.244,,0.126,,42.9,1.103
+screened,B2: 8--11 May,raw,443,4.212,1.203,3.474,-2.384,42.9,2.55
+screened,B2: 8--11 May,rules_repair,443,2.719,0.55,2.116,-1.185,42.9,1.161
+screened,B2: 8--11 May,union_repair,443,2.799,0.568,2.183,-1.249,42.9,1.176
+screened,B3: 12--22 May (chronological split),ae_repair,1162,11.006,0.996,6.497,-7.529,43.9,1.169
+screened,B3: 12--22 May (chronological split),drop_faulty,1162,13.481,0.974,8.991,-9.447,43.9,2.623
+screened,B3: 12--22 May (chronological split),persistence,1162,1.29,,0.872,,43.9,1.338
+screened,B3: 12--22 May (chronological split),raw,1162,10.938,3.45,8.983,-7.476,43.9,4.905
+screened,B3: 12--22 May (chronological split),rules_repair,1162,9.904,0.881,5.848,-6.675,43.9,1.051
+screened,B3: 12--22 May (chronological split),union_repair,1162,11.188,1.109,6.728,-7.67,43.9,1.304

@@ -1,0 +1,22 @@
+\noindent\begin{minipage}{\textwidth}
+\begin{center}
+\footnotesize
+\captionof{table}{Residual LSTM (LSTM of Table~\ref{tab:downstream} trained on the change $y(t+H)-y(t)$, prediction = last observed value + predicted change, absolute level still among the inputs). RMSE mean $\pm$ sd over 10 seeds on the common test set.}
+\label{tab:residual}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccc|ccc}
+\toprule
+ & \multicolumn{3}{c|}{\textbf{RMSE full}} & \multicolumn{3}{c}{\textbf{RMSE inside support}} \\
+\textbf{Training data} & 5 min & 1 h & 6 h & 5 min & 1 h & 6 h \\
+\midrule
+Persistence & 1.29 & 1.53 & 1.97 & 1.34 & 1.52 & 1.58 \\
+Raw & 1.30 $\pm$ 0.00 & 1.70 $\pm$ 0.19 & 2.55 $\pm$ 0.55 & 1.31 & 1.47 & 2.35 \\
+Rules$\rightarrow$repair & 1.81 $\pm$ 0.44 & 1.66 $\pm$ 0.09 & 2.08 $\pm$ 0.15 & 1.18 & 1.48 & 1.34 \\
+LSTM-AE$\rightarrow$repair & 1.79 $\pm$ 0.74 & 1.65 $\pm$ 0.08 & 2.44 $\pm$ 0.35 & 1.25 & 1.50 & 1.57 \\
+Union$\rightarrow$repair & 1.82 $\pm$ 0.69 & 1.67 $\pm$ 0.09 & 2.59 $\pm$ 0.31 & 1.23 & 1.46 & 1.66 \\
+Drop-faulty & 1.30 $\pm$ 0.01 & 1.55 $\pm$ 0.02 & 2.03 $\pm$ 0.05 & 1.32 & 1.49 & 1.53 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{minipage}
+\vspace{10pt}

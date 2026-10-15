@@ -1,0 +1,9 @@
+control,metric,mean_delta,mask_level_deltas,masks_favoring_rules,seed_level_min,seed_level_max,seeds_favoring_rules,fits_favoring_rules,n_fits
+random_mask_repair,rmse,-2.549,-1.330;-1.580;-3.378;-2.978;-3.478,0,-4.4502,0.0548,1,4,50
+random_mask_repair,rmse_inside,0.2431,-0.040;-0.169;0.568;0.344;0.513,3,-0.2667,1.6575,5,24,50
+random_mask_repair,rmse_outside,-3.4521,-1.780;-2.105;-4.608;-4.032;-4.737,0,-5.9661,-0.1649,0,4,50
+random_mask_repair,mae,-1.2554,-0.995;-1.086;-1.315;-1.426;-1.454,0,-2.5374,1.2103,2,11,50
+random_split_repair,rmse,-3.6371,-2.352;-4.005;-5.070;-2.395;-4.364,0,-5.0018,-0.7868,0,3,50
+random_split_repair,rmse_inside,0.9945,1.635;0.833;0.682;1.344;0.479,5,0.3238,2.0552,10,44,50
+random_split_repair,rmse_outside,-5.0335,-3.398;-5.500;-6.933;-3.395;-5.942,0,-6.7998,-1.3262,0,3,50
+random_split_repair,mae,-1.1823,-0.007;-1.427;-2.199;-0.289;-1.990,0,-2.2049,1.1059,1,6,50

@@ -1,0 +1,11 @@
+node_outage,gap_min,best_native_mean,best_normalized_mean,best_humidity,best_temperature,best_soil_moisture,linear_vs_best_native_pct
+False,5,hybrid,hybrid,hybrid,hybrid,knn,0.0
+False,15,hybrid,hybrid,hybrid,spline3,knn,0.0
+False,60,hybrid,knn,hybrid,knn,hybrid,0.0
+False,240,linear,knn,linear,spline3,knn,0.0
+False,720,knn,knn,knn,spline3,knn,71.2
+True,5,hybrid,hybrid,hybrid,hybrid,spline3,0.0
+True,15,hybrid,spline3,hybrid,spline3,spline3,0.0
+True,60,hybrid,hybrid,hybrid,spline3,knn,0.0
+True,240,linear,linear,linear,spline3,knn,0.0
+True,720,linear,linear,linear,spline3,linear,0.0

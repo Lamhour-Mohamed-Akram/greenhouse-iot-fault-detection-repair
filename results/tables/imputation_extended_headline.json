@@ -1,0 +1,18 @@
+{
+  "clean_sd": {
+    "humidity": 6.095771686540359,
+    "temperature": 0.18227593847492193,
+    "soil_moisture": 1.266221138751925
+  },
+  "imputer_params": {
+    "ffill": "pandas ffill then bfill",
+    "linear": "pandas interpolate(method='linear', limit_direction='both')",
+    "spline3": "pandas interpolate(method='spline', order=3)",
+    "knn": "sklearn KNNImputer(n_neighbors=10, metric='nan_euclidean', weights='uniform'), fitted on the 24-h window itself (retrospective, uses rows on both sides of the gap), covariates in native units (no standardization); a standardized variant is benchmarked alongside",
+    "iterative": "sklearn IterativeImputer(estimator=BayesianRidge(), max_iter=10, tol=1e-3, initial_strategy='mean', imputation_order='ascending', random_state=42), fitted on the 24-h window itself",
+    "profile": "minute-of-day mean of the training windows (31-min smoothed), anchored by the mean offset between observed samples of the window and the profile",
+    "hybrid": "linear for gaps <= 60 min, anchored profile otherwise",
+    "covariates": "humidity, temperature, soil moisture, light (co-recorded healthy channels)",
+    "fitting_scope": "all imputers are fitted per 24-h held-out window; they may use observations after the gap (retrospective repair, as stated in Section 3.5)"
+  }
+}

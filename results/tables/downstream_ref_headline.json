@@ -1,0 +1,155 @@
+{
+  "flags": {
+    "rules_raw_stuck_train_pct": {
+      "humidity": 21.5,
+      "temperature": 39.5,
+      "soil_moisture": 52.4
+    },
+    "rules_grid_stuck_train_pct": {
+      "humidity": 22.0,
+      "temperature": 58.2,
+      "soil_moisture": 89.6
+    },
+    "row_any_fault_pct_raw_stuck": 61.3,
+    "row_any_fault_pct_grid_stuck_train": 95.1,
+    "ae_train_pct": {
+      "humidity": 19.3,
+      "temperature": 21.1,
+      "soil_moisture": 50.0
+    },
+    "union_train_pct": {
+      "humidity": 22.2,
+      "temperature": 41.3,
+      "soil_moisture": 53.4
+    }
+  },
+  "long_gap": {
+    "train_rows": 6914,
+    "train_rows_in_gt12h_outage": 1141,
+    "train_rows_in_gt12h_outage_pct": 16.5,
+    "train_target_rows_profile_filled_gt4h": {
+      "rules": 3309,
+      "ae": 3275,
+      "union": 3414
+    },
+    "train_target_rows_profile_filled_gt4h_pct": {
+      "rules": 47.9,
+      "ae": 47.4,
+      "union": 49.4
+    }
+  },
+  "support": [
+    0.0,
+    50.0
+  ],
+  "test_sets": {
+    "1": {
+      "n_test": 1162,
+      "test_period_rows": 2964,
+      "retained_pct": 39.2,
+      "first": "2022-05-16 13:45:00",
+      "last": "2022-05-22 19:55:00",
+      "per_day": {
+        "2022-05-16": 33,
+        "2022-05-17": 185,
+        "2022-05-18": 47,
+        "2022-05-19": 95,
+        "2022-05-20": 288,
+        "2022-05-21": 288,
+        "2022-05-22": 226
+      },
+      "target_mean": 55.27,
+      "target_sd": 9.67,
+      "target_min": 45.0,
+      "target_max": 85.0,
+      "inside_support_n": 510,
+      "inside_support_pct": 43.9,
+      "ar1_coef": [
+        -0.0407,
+        1.0008
+      ],
+      "excluded_observed_n": 403,
+      "excluded_mean": 69.95,
+      "excluded_sd": 11.28
+    },
+    "seed_wilcoxon_H1": {
+      "ae_vs_raw": {
+        "wins": 6,
+        "p": 0.845703125
+      },
+      "ae_vs_rules_repair": {
+        "wins": 0,
+        "p": 0.001953125
+      },
+      "ae_vs_union_repair": {
+        "wins": 9,
+        "p": 0.009765625
+      },
+      "ae_vs_drop_faulty": {
+        "wins": 10,
+        "p": 0.001953125
+      }
+    },
+    "12": {
+      "n_test": 1117,
+      "test_period_rows": 2964,
+      "retained_pct": 37.7,
+      "first": "2022-05-16 14:40:00",
+      "last": "2022-05-22 19:55:00",
+      "per_day": {
+        "2022-05-16": 26,
+        "2022-05-17": 181,
+        "2022-05-18": 30,
+        "2022-05-19": 79,
+        "2022-05-20": 288,
+        "2022-05-21": 288,
+        "2022-05-22": 225
+      },
+      "target_mean": 54.87,
+      "target_sd": 9.35,
+      "target_min": 47.0,
+      "target_max": 86.0,
+      "inside_support_n": 510,
+      "inside_support_pct": 45.7,
+      "ar1_coef": [
+        0.4202,
+        0.9905
+      ]
+    },
+    "72": {
+      "n_test": 1040,
+      "test_period_rows": 2964,
+      "retained_pct": 35.1,
+      "first": "2022-05-16 19:40:00",
+      "last": "2022-05-22 19:55:00",
+      "per_day": {
+        "2022-05-16": 17,
+        "2022-05-17": 124,
+        "2022-05-18": 72,
+        "2022-05-19": 26,
+        "2022-05-20": 288,
+        "2022-05-21": 288,
+        "2022-05-22": 225
+      },
+      "target_mean": 54.38,
+      "target_sd": 8.68,
+      "target_min": 47.0,
+      "target_max": 78.0,
+      "inside_support_n": 487,
+      "inside_support_pct": 46.8,
+      "ar1_coef": [
+        1.6521,
+        0.964
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.11.5",
+    "numpy": "2.3.4",
+    "tensorflow": "2.20.0",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "op_determinism": true,
+    "block_len": 24,
+    "n_boot": 2000
+  }
+}

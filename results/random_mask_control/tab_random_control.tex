@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\footnotesize
+\begin{center}
+\caption{Random-mask control for the original level-predicting LSTM (5-min horizon, common screened test set). Random-mask$\rightarrow$repair masks, on the training partition only, the same number of observed values per channel as the rule detector, in runs of the same lengths, at random positions (5 mask seeds $\times$ 10 training seeds); genuine missing values and every other step are identical to rules$\rightarrow$repair. In the split variant the single 2,026-slot soil-moisture run is placed as two 1,013-slot runs. RMSE: mean $\pm$ sd over fits. $\Delta$ = pooled RMSE of the control minus that of rules$\rightarrow$repair (positive favors rules) with the 95\% bootstrap interval over contiguous runs of test samples; ``masks'' = number of the five mask seeds whose seed-averaged RMSE is above that of rules$\rightarrow$repair. OOR left = share of the out-of-range soil-moisture episode the control leaves unmasked in training.}
+\label{tab:randomcontrol}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Training data} & \textbf{RMSE full} & \textbf{RMSE inside} & \textbf{RMSE outside} & \textbf{$\Delta$ full [95\% CI]} & \textbf{$\Delta$ inside [95\% CI]} & \textbf{Masks full / inside} & \textbf{OOR left} \\
+\midrule
+Persistence (reference) & 1.29 & 1.34 & 1.25 & n/a & n/a & n/a & n/a \\
+Raw (reference) & 10.94 $\pm$ 3.45 & 4.91 $\pm$ 1.79 & 13.93 $\pm$ 4.36 & n/a & n/a & n/a & 100\% \\
+Rules$\rightarrow$repair & 9.90 $\pm$ 0.88 & 1.05 $\pm$ 0.12 & 13.19 $\pm$ 1.17 & n/a & n/a & n/a & 0\% \\
+Random-mask$\rightarrow$repair & 7.36 $\pm$ 1.94 & 1.29 $\pm$ 0.73 & 9.74 $\pm$ 2.57 & -2.34 [-5.11, -0.62] & +0.42 [+0.31, +0.72] & 0 / 3 & 7--10\% \\
+Random-mask$\rightarrow$repair, split & 6.27 $\pm$ 2.30 & 2.05 $\pm$ 0.96 & 8.16 $\pm$ 2.99 & -3.27 [-8.43, -0.13] & +1.20 [+0.96, +1.75] & 0 / 5 & 48--53\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table*}

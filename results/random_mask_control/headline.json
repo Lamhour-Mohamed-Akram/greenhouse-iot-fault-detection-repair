@@ -1,0 +1,13 @@
+{
+  "n_fits_rules": 10,
+  "n_fits_random": 50,
+  "n_fits_random_split": 50,
+  "n_failed": 0,
+  "support": [
+    0.0,
+    50.0
+  ],
+  "n_test": 1162,
+  "n_inside": 510,
+  "reproduction_max_abs_diff": 1.7763568394002505e-15
+}

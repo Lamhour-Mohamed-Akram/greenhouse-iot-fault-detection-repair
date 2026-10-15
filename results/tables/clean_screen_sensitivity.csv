@@ -1,0 +1,10 @@
+hampel_k,sensor,clean_minutes_pct,n_24h_windows
+4,humidity,53.2,0
+4,temperature,48.4,2
+4,soil_moisture,24.0,3
+6,humidity,63.5,5
+6,temperature,49.6,2
+6,soil_moisture,24.4,3
+8,humidity,68.5,12
+8,temperature,49.9,2
+8,soil_moisture,24.5,3

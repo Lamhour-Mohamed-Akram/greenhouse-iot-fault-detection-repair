@@ -1,0 +1,7 @@
+a,b,n_blocks,mean_diff,min_diff,max_diff,blocks_a_better,paired_t_p
+rules_repair,raw,3,-1.119,-1.492,-0.831,3,0.029
+ae_repair,raw,3,-0.766,-1.59,0.068,2,0.251
+rules_repair,persistence,3,3.547,0.553,8.614,0,0.298
+ae_repair,persistence,3,3.901,0.609,9.715,0,0.313
+drop_faulty,raw,3,0.28,-0.877,2.543,2,0.828
+ae_repair,rules_repair,3,0.353,-0.098,1.102,1,0.448

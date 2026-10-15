@@ -1,0 +1,24 @@
+\begin{table}[!ht]
+\centering
+\footnotesize
+\caption{Window-length sensitivity of the detectors on the 72 held-out scenarios (other settings at their defaults). Columns as in Table~\ref{tab:sensitivity}; default lengths in bold. The LSTM-AE row at 60~min comes from the retrained model of this analysis and differs slightly from the default model of Table~\ref{tab:detection}.}
+\label{tab:windowlength}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llccccccccc}
+\toprule
+\textbf{Detector} & \textbf{Window} & \textbf{Macro-F1} & \textbf{Macro-F1 (5)} & \textbf{bias} & \textbf{drift} & \textbf{noise} & \textbf{spike} & \textbf{stuck} & \textbf{FP mean} & \textbf{FP max} \\
+\midrule
+Rules (Hampel window) & 31 min & 0.421 & 0.310 & 0.001 & 0.092 & 0.007 & 0.458 & 0.991 & 0.10\% & 0.35\% \\
+Rules (Hampel window) & \textbf{61 min} & 0.444 & 0.333 & 0.000 & 0.073 & 0.009 & 0.591 & 0.991 & 0.00\% & 0.00\% \\
+Rules (Hampel window) & 121 min & 0.422 & 0.314 & 0.006 & 0.041 & 0.016 & 0.519 & 0.986 & 0.21\% & 0.83\% \\
+\midrule
+Isolation Forest (rolling window) & 15 min & 0.381 & 0.264 & 0.064 & 0.025 & 0.316 & 0.442 & 0.470 & 0.19\% & 0.62\% \\
+Isolation Forest (rolling window) & \textbf{30 min} & 0.333 & 0.204 & 0.037 & 0.006 & 0.228 & 0.284 & 0.467 & 0.12\% & 0.28\% \\
+Isolation Forest (rolling window) & 60 min & 0.307 & 0.180 & 0.034 & 0.001 & 0.199 & 0.261 & 0.406 & 0.69\% & 2.78\% \\
+\midrule
+LSTM-AE (sequence length, retrained) & 30 min & 0.384 & 0.270 & 0.199 & 0.188 & 0.270 & 0.675 & 0.016 & 0.24\% & 0.69\% \\
+LSTM-AE (sequence length, retrained) & \textbf{60 min} & 0.372 & 0.249 & 0.156 & 0.170 & 0.203 & 0.692 & 0.022 & 0.07\% & 0.14\% \\
+LSTM-AE (sequence length, retrained) & 120 min & 0.275 & 0.151 & 0.133 & 0.125 & 0.126 & 0.357 & 0.012 & 0.99\% & 2.57\% \\
+\bottomrule
+\end{tabular}
+\end{table}

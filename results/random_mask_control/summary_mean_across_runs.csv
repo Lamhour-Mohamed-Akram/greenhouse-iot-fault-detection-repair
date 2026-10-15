@@ -1,0 +1,8 @@
+,rmse,rmse,rmse,mae,mae,mae,rmse_inside,rmse_inside,rmse_inside,mae_inside,mae_inside,mae_inside,rmse_outside,rmse_outside,rmse_outside,mae_outside,mae_outside,mae_outside
+,mean,std,count,mean,std,count,mean,std,count,mean,std,count,mean,std,count,mean,std,count
+group,,,,,,,,,,,,,,,,,,
+persistence,1.2904,,1,0.8718,,1,1.338,,1,0.9314,,1,1.252,,1,0.8252,,1
+random_mask_repair,7.3552,1.9378,50,4.5928,1.352,50,1.2943,0.7271,50,1.0746,0.6456,50,9.7369,2.5655,50,7.3447,2.0756,50
+random_split_repair,6.2671,2.3009,50,4.6658,1.8414,50,2.0457,0.9607,50,1.7475,0.9165,50,8.1554,2.9885,50,6.9486,2.6147,50
+raw,10.938,3.4504,10,8.9829,2.9121,10,4.905,1.7868,10,4.094,1.4686,10,13.933,4.3615,10,12.807,4.1049,10
+rules_repair,9.9041,0.8812,10,5.8481,0.5668,10,1.0512,0.1245,10,0.8648,0.1124,10,13.189,1.1741,10,9.7461,0.9412,10

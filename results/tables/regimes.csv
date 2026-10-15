@@ -1,0 +1,4 @@
+regime,start,end,description,days,samples,median_dt_s,temp_daily_range_median_degC,temp_daily_unique_median,temp_daily_sd_median,hum_daily_range_median,sm_min,sm_max,sm_median,n_full_days
+R1,2022-04-18,2022-04-27 12:33,"post-start, 1 sample/min, soil-moisture probe out of range",9.5,12882,60.0,16.1,102.0,2.71,30.1,-85.0,93.0,-85.0,8
+R2,2022-04-28 12:00,2022-05-11 01:26,"dense sampling (about 1 sample/s), all dynamic channels varying",12.6,926759,1.0,16.45,111.0,3.25,34.5,24.0,50.0,43.0,10
+R3,2022-05-16 12:12,2022-05-22 19:59,"after the 130.8-h outage: 1 sample/min, air-temperature variance collapse, soil-moisture level shift",6.3,8032,60.0,0.8,9.0,0.24,13.6,24.0,122.0,51.0,4

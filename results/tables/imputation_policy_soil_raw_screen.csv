@@ -1,0 +1,11 @@
+node_outage,gap_min,best,best_nrmse,linear_nrmse,tied_with_best,selected,table10_selected,differs_from_table10
+False,5,ffill,0.0,0.0,linear;ffill;hybrid,linear,linear,False
+False,15,ffill,0.0,0.0,linear;ffill;hybrid,linear,linear,False
+False,60,hybrid,0.072,0.072,linear;hybrid,linear,linear,False
+False,240,linear,0.197,0.197,linear;profile;hybrid,linear,linear,False
+False,720,linear,0.222,0.222,linear;ffill;knn,linear,knn,True
+True,5,hybrid,0.02,0.02,linear;ffill;hybrid,linear,linear,False
+True,15,hybrid,0.027,0.027,linear;ffill;hybrid,linear,linear,False
+True,60,hybrid,0.04,0.04,linear;hybrid,linear,linear,False
+True,240,linear,0.129,0.129,linear,linear,linear,False
+True,720,linear,0.182,0.182,linear;knn;iterative,linear,linear,False

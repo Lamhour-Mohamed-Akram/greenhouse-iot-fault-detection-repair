@@ -1,0 +1,11 @@
+control,mask_seed,oor_left_pct
+random_mask_repair,101,8.7
+random_mask_repair,202,7.1
+random_mask_repair,303,8.5
+random_mask_repair,404,9.0
+random_mask_repair,505,9.7
+random_split_repair,101,53.4
+random_split_repair,202,47.7
+random_split_repair,303,48.5
+random_split_repair,404,49.9
+random_split_repair,505,49.9

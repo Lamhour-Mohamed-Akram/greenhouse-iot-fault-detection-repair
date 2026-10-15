@@ -1,0 +1,4 @@
+detector,bias,drift,dropout,noise,spike,stuck
+iforest,0.583,0.25,1.0,0.667,0.583,0.5
+lstm_ae,0.667,0.417,1.0,0.667,0.75,0.167
+rules,0.0,0.75,1.0,0.5,0.75,1.0

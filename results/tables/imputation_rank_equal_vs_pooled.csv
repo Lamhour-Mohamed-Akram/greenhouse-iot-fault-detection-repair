@@ -1,0 +1,11 @@
+node_outage,gap_min,best_equal_sensor,best_pooled,linear_equal,best_equal_value,linear_gap_to_best_pct
+False,5,hybrid,hybrid,0.495,0.495,0.0
+False,15,knn,hybrid,0.717,0.681,5.3
+False,60,knn,knn,0.731,0.687,6.4
+False,240,knn,knn,0.786,0.728,8.0
+False,720,knn,knn,0.906,0.764,18.6
+True,5,hybrid,hybrid,0.474,0.474,0.0
+True,15,spline3,spline3,0.758,0.703,7.8
+True,60,hybrid,hybrid,0.726,0.726,0.0
+True,240,iterative,linear,0.933,0.92,1.4
+True,720,linear,linear,0.869,0.869,0.0

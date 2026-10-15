@@ -1,0 +1,55 @@
+{
+  "macro_f1": {
+    "iforest": 0.333,
+    "lstm_ae": 0.356,
+    "rules": 0.444
+  },
+  "macro_f1_no_dropout": {
+    "iforest": 0.204,
+    "lstm_ae": 0.232,
+    "rules": 0.333
+  },
+  "n_held_out_windows": {
+    "humidity": 2,
+    "temperature": 1,
+    "soil_moisture": 1
+  },
+  "real_stream_coverage": {
+    "rules_grid_stuck_pct": 75.3,
+    "rules_raw_stuck_pct": 51.6,
+    "components_pct": {
+      "missing_minutes": 26.4,
+      "oor": 22.3,
+      "stuck_grid_not_oor": 26.7,
+      "stuck_raw_not_oor": 2.9,
+      "spike": 0.07
+    },
+    "table4_total_soil_moisture_pct": 51.6
+  },
+  "injection_params": {
+    "spike": "n = max(1, frac*1440) isolated samples, frac = 0.2/0.5/1.0 %, random sign, uniformly random positions",
+    "stuck": "one episode of 90/240/480 min, random start, value frozen at the start sample",
+    "drift": "linear ramp from 0 to k*sigma starting at a random position in the second quarter of the window and lasting to its end",
+    "bias": "step of +/- k*sigma (random sign) from a random position in the second quarter of the window to its end",
+    "noise": "Gaussian noise N(0, (k*sigma)^2) added over one 360-min episode starting in the first half of the window",
+    "dropout": "one episode of 15/60/240 min set to missing, random start",
+    "bounds": "injected values are not clipped; samples crossing the physical bounds remain labelled with their injected class"
+  },
+  "ae_thresholds": {
+    "humidity": {
+      "0.99": 1.9524393028393394,
+      "0.995": 2.6657784978573558,
+      "0.999": 3.58477728551089
+    },
+    "temperature": {
+      "0.99": 2.7589428098201734,
+      "0.995": 3.00170849498113,
+      "0.999": 3.8239403622448442
+    },
+    "soil_moisture": {
+      "0.99": 0.8213457604139501,
+      "0.995": 1.5508948013036088,
+      "0.999": 2.2496032893013376
+    }
+  }
+}

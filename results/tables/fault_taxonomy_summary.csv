@@ -1,0 +1,7 @@
+sensor,dead_sensor,calibration_bias,dropout_pct,oor_pct,stuck_pct,spike_pct,total_faulty_pct
+humidity,False,False,26.36,0.0,0.0,0.64,27.0
+temperature,False,False,26.36,0.0,13.7,0.19,40.25
+soil_moisture,False,False,26.36,22.3,2.91,0.02,51.59
+soil_temp,True,False,26.36,0.0,73.43,0.0,100.0
+co2,False,True,26.36,0.0,0.14,1.22,100.0
+light,False,False,26.36,0.0,0.0,0.0,26.36

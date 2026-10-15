@@ -1,0 +1,16 @@
+H,variant,n_val,val_rmse_persistence,val_rmse_ridge,ridge_alpha,val_rmse_lstm,selected
+1,raw,472,1.20557,1.20452,1000.0,1.14689,lstm
+1,rules_repair,472,1.20557,1.04341,0.1,1.13587,ridge
+1,ae_repair,472,1.20557,1.0867,0.1,1.14926,ridge
+1,union_repair,472,1.20557,1.08413,0.1,1.1344,ridge
+1,drop_faulty,472,1.20557,1.01226,100.0,1.1986,ridge
+12,raw,337,0.81346,1.06279,1000.0,0.84472,persistence
+12,rules_repair,337,0.81346,0.78377,1000.0,0.85363,ridge
+12,ae_repair,337,0.81346,0.77881,0.1,0.92641,ridge
+12,union_repair,337,0.81346,0.73837,0.1,0.9808,ridge
+12,drop_faulty,337,0.81346,0.71304,0.1,0.8272,ridge
+72,raw,298,2.15817,4.6094,1000.0,3.32011,persistence
+72,rules_repair,298,2.15817,1.87776,1000.0,2.01738,ridge
+72,ae_repair,298,2.15817,2.12846,1000.0,2.34072,ridge
+72,union_repair,298,2.15817,2.29312,1000.0,2.50539,persistence
+72,drop_faulty,298,2.15817,1.98448,100.0,2.08466,ridge

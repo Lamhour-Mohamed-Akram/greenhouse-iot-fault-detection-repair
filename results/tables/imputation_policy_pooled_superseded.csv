@@ -1,0 +1,11 @@
+node_outage,gap_min,best_all_windows,best_training_period_windows,linear_nrmse_train_only,ffill_nrmse_train_only,knn_nrmse_train_only
+False,5,hybrid,hybrid,0.018,0.023,0.038
+False,15,hybrid,hybrid,0.067,0.086,0.186
+False,60,knn,hybrid,0.036,0.133,0.149
+False,240,knn,linear,0.09,0.261,0.213
+False,720,knn,knn,0.614,0.681,0.318
+True,5,hybrid,hybrid,0.045,0.049,0.988
+True,15,spline3,hybrid,0.018,0.019,0.711
+True,60,hybrid,hybrid,0.034,0.088,0.51
+True,240,linear,linear,0.572,1.044,0.806
+True,720,linear,linear,0.515,0.789,0.842

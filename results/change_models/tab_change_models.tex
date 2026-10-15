@@ -1,0 +1,31 @@
+\begin{table*}[!t]
+\footnotesize
+\begin{center}
+\caption{Level-free change models (prediction = last observed value + predicted change; no absolute soil-moisture level among the inputs). For each training variant and horizon the candidate (persistence, ridge regression, level-free LSTM) with the lowest error on a chronological validation slice at the end of the training period is selected (detection, normalization and repair for that slice use only the earlier part of the training period) and then evaluated on the common test set. Ridge = RMSE of the ridge candidate for every variant (same model family, no selection). RMSE on the full test set and inside/outside the training support; SS = skill relative to persistence; $\Delta$ = pooled RMSE difference to persistence with the 95\% bootstrap interval over contiguous runs of test samples (n/a when persistence is selected). For these exploratory models we report this more conservative bootstrap rather than the moving-block bootstrap of Table~\ref{tab:inference}; with the moving-block bootstrap the 6-h drop-faulty difference to persistence would exclude zero ($-0.177$ to $-0.035$). Bold row label: rules$\rightarrow$repair, the primary repaired variant; bold does not mark the best value. The selection among candidates is part of an exploratory analysis added after the main results; the intervals do not account for it. Persistence: 1.29, 1.53 and 1.97 at 5~min, 1~h and 6~h.}
+\label{tab:changemodels}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Horizon} & \textbf{Training data} & \textbf{Selected} & \textbf{RMSE full} & \textbf{SS} & \textbf{RMSE inside} & \textbf{RMSE outside} & \textbf{Ridge} & \textbf{$\Delta$ vs.\ persistence [95\% CI]} \\
+\midrule
+5 min & Raw & LSTM & 1.22 & 0.05 & 1.24 & 1.21 & 1.28 & -0.07 [-0.09, -0.05] \\
+ & \textbf{Rules$\rightarrow$repair} & ridge & 1.11 & 0.14 & 1.13 & 1.10 & 1.11 & -0.18 [-0.22, -0.12] \\
+ & LSTM-AE$\rightarrow$repair & ridge & 1.16 & 0.10 & 1.19 & 1.13 & 1.16 & -0.13 [-0.16, -0.10] \\
+ & Union$\rightarrow$repair & ridge & 1.16 & 0.10 & 1.19 & 1.13 & 1.16 & -0.13 [-0.16, -0.10] \\
+ & Drop-faulty & ridge & 1.11 & 0.14 & 1.11 & 1.12 & 1.11 & -0.18 [-0.25, -0.01] \\
+\midrule
+1 h & Raw & persistence & 1.53 & 0.00 & 1.52 & 1.55 & 1.73 & n/a \\
+ & \textbf{Rules$\rightarrow$repair} & persistence & 1.53 & 0.00 & 1.52 & 1.55 & 1.36 & n/a \\
+ & LSTM-AE$\rightarrow$repair & persistence & 1.53 & 0.00 & 1.52 & 1.55 & 1.34 & n/a \\
+ & Union$\rightarrow$repair & ridge & 1.34 & 0.13 & 1.35 & 1.33 & 1.34 & -0.20 [-0.23, -0.09] \\
+ & Drop-faulty & ridge & 1.32 & 0.14 & 1.24 & 1.39 & 1.32 & -0.21 [-0.25, -0.08] \\
+\midrule
+6 h & Raw & persistence & 1.97 & 0.00 & 1.58 & 2.26 & 5.02 & n/a \\
+ & \textbf{Rules$\rightarrow$repair} & ridge & 2.30 & -0.17 & 1.64 & 2.76 & 2.30 & +0.33 [+0.23, +0.53] \\
+ & LSTM-AE$\rightarrow$repair & ridge & 2.27 & -0.15 & 2.00 & 2.48 & 2.27 & +0.29 [+0.13, +0.56] \\
+ & Union$\rightarrow$repair & ridge & 2.25 & -0.14 & 1.98 & 2.47 & 2.25 & +0.28 [+0.13, +0.56] \\
+ & Drop-faulty & ridge & 1.88 & 0.05 & 1.32 & 2.25 & 1.88 & -0.10 [-0.15, +0.02] \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table*}

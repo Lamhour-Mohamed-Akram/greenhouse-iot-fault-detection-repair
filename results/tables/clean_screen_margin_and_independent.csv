@@ -1,0 +1,13 @@
+screen,sensor,clean_minutes_pct,n_windows,n_eval_windows,fp_rules,fp_iforest,fp_lstm_ae,fp_rules_gridstuck,windows
+"rule screen, margin 15 min",humidity,66.8,4,2,0.069,0.139,0.0,,
+"rule screen, margin 15 min",temperature,50.2,2,1,0.0,0.208,0.139,,
+"rule screen, margin 15 min",soil_moisture,24.5,3,2,0.0,0.417,0.243,,
+"rule screen, margin 30 min",humidity,63.5,4,2,0.0,0.139,0.208,,
+"rule screen, margin 30 min",temperature,49.6,2,1,0.0,0.208,0.139,,
+"rule screen, margin 30 min",soil_moisture,24.4,3,1,0.0,0.0,0.0,,
+"rule screen, margin 60 min",humidity,58.3,4,2,0.0,0.139,0.0,,
+"rule screen, margin 60 min",temperature,48.6,2,1,0.0,0.208,0.139,,
+"rule screen, margin 60 min",soil_moisture,24.2,3,2,0.0,0.0,0.0,,
+"LSTM-AE screen (< 1 % flagged, no rule criterion)",humidity,,8,8,0.703,0.191,0.208,0.703,2022-04-23 01:07:00;2022-04-24 09:01:00;2022-05-02 01:17:00;2022-05-03 01:17:00;2022-05-04 01:17:00;2022-05-16 12:12:00;2022-05-20 10:25:00;2022-05-21 12:39:00
+"LSTM-AE screen (< 1 % flagged, no rule criterion)",temperature,,1,1,0.0,0.208,0.139,0.0,2022-05-20 10:25:00
+"LSTM-AE screen (< 1 % flagged, no rule criterion)",soil_moisture,,12,12,6.528,62.922,0.052,63.75,2022-04-28 13:04:00;2022-05-02 01:17:00;2022-05-03 01:17:00;2022-05-04 01:17:00;2022-05-05 01:17:00;2022-05-06 01:17:00;2022-05-07 01:17:00;2022-05-08 03:00:00;2022-05-09 13:44:00;2022-05-19 11:22:00;2022-05-20 11:22:00;2022-05-21 12:39:00

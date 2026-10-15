@@ -1,0 +1,89 @@
+{
+  "dropout": {
+    "events_gt5min": 15,
+    "sum_event_hours": 216.8,
+    "span_hours": 823.0,
+    "event_basis_pct": 26.34,
+    "grid_slot_basis_pct": 26.36,
+    "grid_slots_total": 49383,
+    "grid_slots_missing": 13017,
+    "note": "event basis sums the durations of the 15 gaps > 5 min; grid basis counts 1-min slots that received no sample (includes isolated missing minutes shorter than 5 min)"
+  },
+  "co2": {
+    "median_all": 101.6,
+    "median_night_22_05": 104.5,
+    "median_day_10_16": 98.8,
+    "p05": 68.0,
+    "p95": 150.0,
+    "pct_below_150": 94.7,
+    "pct_below_420": 99.7,
+    "daily_median_min": 68.0,
+    "daily_median_max": 377.0,
+    "n_days_daily_median_below_150": 22,
+    "basis": "raw samples (raw-sample weighted)",
+    "time_basis_1min": {
+      "median": 113.3,
+      "pct_below_150": 70.4,
+      "median_night_22_05": 116.3,
+      "median_day_10_16": 111.8
+    },
+    "per_regime": {
+      "R1": {
+        "raw_sample_share_pct": 1.4,
+        "median_1min": 122.6,
+        "median_night_22_05_1min": 122.6,
+        "median_day_10_16_1min": 125.9,
+        "pct_below_150_1min": 64.1
+      },
+      "R2": {
+        "raw_sample_share_pct": 97.8,
+        "median_1min": 101.6,
+        "median_night_22_05_1min": 101.6,
+        "median_day_10_16_1min": 98.8,
+        "pct_below_150_1min": 95.8
+      },
+      "R3": {
+        "raw_sample_share_pct": 0.8,
+        "median_1min": 223.8,
+        "median_night_22_05_1min": 209.2,
+        "median_day_10_16_1min": 223.8,
+        "pct_below_150_1min": 30.1
+      }
+    }
+  },
+  "longest_constant_run": {
+    "longest_run_value": -85.0,
+    "longest_run_hours": 153.1,
+    "longest_run_start": "2022-04-20 02:41:06",
+    "longest_run_end": "2022-04-26 11:48:54",
+    "longest_run_is_out_of_range": true,
+    "longest_in_range_stuck_hours": 5.47,
+    "longest_in_range_stuck_start": "2022-05-05 21:03:22"
+  },
+  "variance_collapse": {
+    "r2_median_daily_range_degC": 16.45,
+    "threshold_degC": 1.65,
+    "variance_collapse_days": [
+      "2022-05-17",
+      "2022-05-18",
+      "2022-05-19",
+      "2022-05-20",
+      "2022-05-21"
+    ],
+    "n_days": 5,
+    "pct_of_1min_slots_with_data": 16.3,
+    "pct_of_deployment_time": 14.6,
+    "post_outage_days": [
+      "2022-05-17",
+      "2022-05-18",
+      "2022-05-19",
+      "2022-05-20",
+      "2022-05-21"
+    ]
+  },
+  "flag_definitions": {
+    "stuck_episodes_gt1h_soil_moisture": 11,
+    "share_of_stuck_time_in_first_60min": 46.2,
+    "note": "retrospective labelling marks the whole constant run; an online detector can flag only after minute 60, so point-wise recall of an online rule is bounded by 1 - share_of_first_60min"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "control_B_max_piece_slots": 1737,
+  "mask_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "horizon_steps": 1,
+  "split_time": "2022-05-12 13:00:00",
+  "linear_max_slots": 48,
+  "epochs": 30,
+  "batch": 256,
+  "seq_len": 12,
+  "environment": {
+    "python": "3.11.5",
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "tensorflow": "2.20.0",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "op_determinism": true
+  }
+}

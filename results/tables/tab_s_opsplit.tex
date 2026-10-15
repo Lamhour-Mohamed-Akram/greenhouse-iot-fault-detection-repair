@@ -1,0 +1,38 @@
+\begin{table}[!ht]
+\centering
+\small
+\caption{Inside-support errors of the original level-predicting LSTMs with the test samples grouped by the true target (post hoc, as in Table~\ref{tab:inference}) or by the last observed value $y(t)$, which is known when the forecast is made; inside = value within the training support (0--50 index units). (a) Pooled RMSE in index units and the share of test samples on which the two groupings agree. (b) Pooled RMSE difference (first minus second) with the 95\% moving-block bootstrap interval (block 24, 2,000 replicates, the procedure of Table~\ref{tab:inference}; the target rows reproduce it). Values from script 24, section (j).}
+\label{tab:opsplit}
+\setlength{\tabcolsep}{4pt}
+\textbf{(a)} RMSE inside the support\\[2pt]
+\begin{tabular}{llcrccccc}
+\toprule
+\textbf{H} & \textbf{Grouping} & \textbf{Agree} & $n$ & \textbf{Persistence} & \textbf{Raw} & \textbf{Rules} & \textbf{LSTM-AE} & \textbf{Union} \\
+\midrule
+5 min & target & 82.1\% & 510 & 1.34 & 5.19 & 1.06 & 1.18 & 1.32 \\
+ & last input &  & 510 & 1.35 & 5.72 & 1.56 & 1.70 & 1.86 \\
+\midrule
+1 h & target & 77.8\% & 510 & 1.52 & 5.58 & 1.87 & 1.67 & 1.78 \\
+ & last input &  & 498 & 1.47 & 6.08 & 2.44 & 2.24 & 2.36 \\
+\midrule
+6 h & target & 72.7\% & 487 & 1.58 & 7.33 & 3.28 & 2.95 & 3.24 \\
+ & last input &  & 439 & 1.61 & 8.25 & 4.12 & 3.80 & 4.09 \\
+\bottomrule
+\end{tabular}
+\\[8pt]
+\textbf{(b)} Differences inside the support\\[2pt]
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{H} & \textbf{Grouping} & \shortstack{Rules\\$-$ pers.} & \shortstack{LSTM-AE\\$-$ pers.} & \shortstack{Union\\$-$ pers.} & \shortstack{Raw\\$-$ pers.} & \shortstack{Rules\\$-$ raw} & \shortstack{LSTM-AE\\$-$ raw} \\
+\midrule
+5 min & target & \shortstack{$-0.28$\\{\scriptsize $[-0.43, -0.14]$}} & \shortstack{$-0.16$\\{\scriptsize $[-0.31, -0.01]$}} & \shortstack{$-0.02$\\{\scriptsize $[-0.19, +0.15]$}} & \shortstack{$+3.85$\\{\scriptsize $[+2.49, +4.92]$}} & \shortstack{$-4.13$\\{\scriptsize $[-5.12, -2.85]$}} & \shortstack{$-4.01$\\{\scriptsize $[-5.04, -2.71]$}} \\[2pt]
+ & last input & \shortstack{$+0.21$\\{\scriptsize $[-0.02, +0.43]$}} & \shortstack{$+0.35$\\{\scriptsize $[+0.08, +0.60]$}} & \shortstack{$+0.51$\\{\scriptsize $[+0.22, +0.80]$}} & \shortstack{$+4.37$\\{\scriptsize $[+2.85, +5.54]$}} & \shortstack{$-4.16$\\{\scriptsize $[-5.09, -2.92]$}} & \shortstack{$-4.01$\\{\scriptsize $[-4.99, -2.76]$}} \\[2pt]
+\midrule
+1 h & target & \shortstack{$+0.35$\\{\scriptsize $[+0.07, +0.57]$}} & \shortstack{$+0.15$\\{\scriptsize $[-0.07, +0.31]$}} & \shortstack{$+0.26$\\{\scriptsize $[+0.05, +0.46]$}} & \shortstack{$+4.06$\\{\scriptsize $[+2.61, +5.24]$}} & \shortstack{$-3.71$\\{\scriptsize $[-4.61, -2.55]$}} & \shortstack{$-3.91$\\{\scriptsize $[-4.88, -2.69]$}} \\[2pt]
+ & last input & \shortstack{$+0.97$\\{\scriptsize $[+0.52, +1.33]$}} & \shortstack{$+0.77$\\{\scriptsize $[+0.39, +1.10]$}} & \shortstack{$+0.90$\\{\scriptsize $[+0.51, +1.25]$}} & \shortstack{$+4.62$\\{\scriptsize $[+3.01, +5.85]$}} & \shortstack{$-3.64$\\{\scriptsize $[-4.50, -2.50]$}} & \shortstack{$-3.84$\\{\scriptsize $[-4.73, -2.63]$}} \\[2pt]
+\midrule
+6 h & target & \shortstack{$+1.70$\\{\scriptsize $[+1.41, +2.08]$}} & \shortstack{$+1.38$\\{\scriptsize $[+1.10, +1.73]$}} & \shortstack{$+1.67$\\{\scriptsize $[+1.38, +2.04]$}} & \shortstack{$+5.76$\\{\scriptsize $[+4.22, +7.17]$}} & \shortstack{$-4.05$\\{\scriptsize $[-5.18, -2.77]$}} & \shortstack{$-4.38$\\{\scriptsize $[-5.58, -3.09]$}} \\[2pt]
+ & last input & \shortstack{$+2.51$\\{\scriptsize $[+2.07, +3.05]$}} & \shortstack{$+2.19$\\{\scriptsize $[+1.75, +2.72]$}} & \shortstack{$+2.48$\\{\scriptsize $[+2.03, +3.05]$}} & \shortstack{$+6.64$\\{\scriptsize $[+4.74, +8.13]$}} & \shortstack{$-4.13$\\{\scriptsize $[-5.18, -2.72]$}} & \shortstack{$-4.45$\\{\scriptsize $[-5.49, -3.00]$}} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
