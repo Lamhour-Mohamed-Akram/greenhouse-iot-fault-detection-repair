@@ -120,7 +120,7 @@ M. A. Lamhour, M. Msalek, M. Kasbouya, S. Ardchir, and M. Azzouazi, "From Faulty
          Health Management Pipeline for Fault Detection, Data Repair, and Downstream Validation},
   author={Lamhour, Mohamed Akram and
           Msalek, Mohamed and
-          Kasbouya, Mohamed and
+          Kasbouya, Mohammed and
           Ardchir, Soufiane and
           Azzouazi, Mohamed},
   year={2026},
