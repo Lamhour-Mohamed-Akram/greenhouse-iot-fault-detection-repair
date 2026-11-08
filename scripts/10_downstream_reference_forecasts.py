@@ -376,7 +376,7 @@ def broken(ts, vals):
     return pd.DatetimeIndex(out_t), np.array(out_v)
 bt, bv = broken(ts, yt); ax.plot(bt, bv, color="black", lw=1.2, label="observed (gaps broken)")
 pt, pv = broken(ts, store[(1, "raw")][2]); ax.plot(pt, pv, color="tab:red", lw=0.8, alpha=0.8, label="raw-trained")
-pt, pv = broken(ts, store[(1, "ae_repair")][2]); ax.plot(pt, pv, color="tab:olive", lw=0.8, alpha=0.9, label="LSTM-AE $\\rightarrow$ repair")
+pt, pv = broken(ts, store[(1, "rules_repair")][2]); ax.plot(pt, pv, color="tab:olive", lw=0.8, alpha=0.9, label="rules $\\rightarrow$ repair")
 pt, pv = broken(ts, y_all[tidx - 1]); ax.plot(pt, pv, color="tab:gray", lw=0.8, ls="--", alpha=0.8, label="persistence")
 ax.axhspan(SUPPORT[0], SUPPORT[1], color="tab:blue", alpha=0.07, label="training support")
 ax.set_ylabel("Soil-moisture index (index units)"); ax.legend(fontsize=8, ncol=5, loc="upper right"); ax.set_title("5-min-ahead predictions on the common untouched test set (seed 42)", fontsize=9)

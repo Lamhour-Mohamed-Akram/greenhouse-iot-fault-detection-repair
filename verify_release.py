@@ -190,7 +190,12 @@ check("operational split, 1 h and 6 h: every repaired variant worse than persist
       and round(ops["H12"]["last_input"]["differences_inside"]["rules_repair-persistence"][0], 2) == 0.97
       and round(ops["H72"]["last_input"]["differences_inside"]["rules_repair-persistence"][0], 2) == 2.51
       and all(-4.5 < ops[h][s]["differences_inside"][f"{v}-raw"][0] < -3.6 for h in ["H12", "H72"] for s in ["target", "last_input"] for v in ["rules_repair", "ae_repair", "union_repair"]))
-check("raw/repaired inside-support RMSE ratio at 5 min spans 3.1-4.9 over both groupings (abstract)",
+rt1, rl1 = ops["H1"]["target"]["raw_over_repair_inside"].values(), ops["H1"]["last_input"]["raw_over_repair_inside"].values()
+check("raw/repaired pooled inside-support RMSE ratio at 5 min: 3.9-4.9 by target, 3.1-3.7 by last input (abstract)",
+      (round(min(rt1), 1), round(max(rt1), 1), round(min(rl1), 1), round(max(rl1), 1)) == (3.9, 4.9, 3.1, 3.7))
+dp = pd.read_csv("results/tables/detection_paired_differences.csv").set_index(["fault_type", "a", "b"]).loc[("bias", "rules", "lstm_ae")]
+check("LSTM-AE vs rules on bias: 0.16, interval 0.002 to 0.32 (Section 4.2)", (round(-dp.mean_diff, 2), round(-dp.ci_hi, 3), round(-dp.ci_lo, 2)) == (0.16, 0.002, 0.32))
+check("raw/repaired inside-support RMSE ratio at 5 min spans 3.1-4.9 over both groupings",
       round(min(min(ops["H1"][s]["raw_over_repair_inside"].values()) for s in ["target", "last_input"]), 1) == 3.1
       and round(max(max(ops["H1"][s]["raw_over_repair_inside"].values()) for s in ["target", "last_input"]), 1) == 4.9)
 

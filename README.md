@@ -61,6 +61,7 @@ python scripts/20_change_models.py            # level-free change models (persis
 python scripts/21_change_model_tables.py      # tables of scripts 19 and 20
 python scripts/22_supplementary_tables.py      # Supplementary Tables S2, S4, S8 and S9 (detector window lengths, per-sensor imputation errors of all seven methods, block-length sensitivity of the temporal intervals, inside-support errors grouped by the target and by the last observed input)
 python scripts/23_severity_heatmap.py          # Supplementary Figure S2 redrawn from the saved per-severity F1 table
+python scripts/25_predictions_figure.py        # Figure 8 (raw and rules-repaired, seed 42) redrawn from the saved predictions, no training
 python scripts/24_revision_checks.py           # checks of the second revision round, no training: persistence on the submitted (1,012) and revised (1,162) test sets, stuck-rule and rule-flag shares, flagged-run lengths behind the RQ4 repair, CO2 on the time basis per regime, per-window detector differences, inside-support decomposition grouped by the last observed input with the Table 12 bootstrap (revision_checks.json, detection_paired_differences_by_window.csv, downstream_support_operational.csv)
 ```
 
@@ -99,7 +100,7 @@ Repository output filenames are historical; the manuscript and its Supplementary
 | Fig. 5 | `fig2_fault_prevalence.*` | `07_regimes_and_definitions.py` |
 | Fig. 6 | `fig7_real_deployment_detection.*` | `11_figures_overview_and_real_stream.py` |
 | Fig. 7 | `fig8_imputation_rmse_vs_gap.*` | `14_weighting_and_blocks.py` (normalized; script 04 draws the native-unit version) |
-| Fig. 8 | `fig11_downstream_predictions.*` | `10_downstream_reference_forecasts.py` |
+| Fig. 8 | `fig11_downstream_predictions.*` | `25_predictions_figure.py` (from the predictions saved by `17_random_mask_control.py`; `10_downstream_reference_forecasts.py` draws the same variant) |
 | Fig. S1 | `fig4_injected_fault_types.*` | `02_fault_injection.py` |
 | Fig. S2 | `fig6_detection_severity_heatmap.*` | `23_severity_heatmap.py` (from the table written by `03_fault_detection.py`) |
 | Fig. S3 | `fig9_imputation_example.*` | `04_imputation_repair.py` |
